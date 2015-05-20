@@ -1,7 +1,7 @@
 Gem::Specification.new do |spec|
 
   spec.name          = 'jruby-kafka-lockjar'
-  spec.version       = '1.4.0'
+  spec.version       = '1.4.0.pre'
   spec.authors       = ['Joseph Lawson', 'Darrick Wiebe']
   spec.email         = ['joe@joekiller.com', 'dw@xnlogic.com']
   spec.description   = 'Fork of jruby-kafka that uses lockjar instead of ruby-maven'
@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.platform      = 'java'
   spec.require_paths = [ 'lib' ]
 
-  spec.files = Dir[ 'lib/**/*.rb' ]
+  spec.files = Dir[ 'lib/**/*.rb', 'Jarfile' ]
 
   spec.add_runtime_dependency "lock_jar"
 
